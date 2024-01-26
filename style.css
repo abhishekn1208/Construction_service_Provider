@@ -1,0 +1,420 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+}
+
+#logo {
+    margin: 25px 179px;
+}
+
+#logo img {
+    height: 58px;
+    width: 224px;
+}
+
+#navbar ul {
+    display: flex;
+    margin: 30px 150px;
+
+
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 23px 34px;
+}
+
+#navbar ul li:hover {
+    color: white;
+}
+
+.dropdown-menu {
+    display: none;
+}
+
+#navbar ul li:hover .dropdown-menu {
+    display: block;
+    position: absolute;
+    left: 70%;
+    top: 59%;
+    background-color: white;
+    margin-top: 10px;
+
+}
+
+#navbar ul li:hover .dropdown-menu ul {
+    display: block;
+    margin: 10px;
+    width: 250px;
+}
+
+#navbar ul li:hover .dropdown-menu ul li {
+    width: 250px;
+    padding: 10px;
+    border-bottom: 1px dotted grey;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+#navbar ul li:hover .dropdown-menu ul li a {
+    text-align: left;
+    color: black;
+    padding: 12px;
+    font-size: 14px;
+}
+
+#navbar ul li:hover .dropdown-menu ul li:last-child {
+    border-bottom: none;
+}
+
+.dropdown-menu2 {
+    display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu2 {
+    display: block;
+    position: absolute;
+    right: 260px;
+    top: 0px;
+    background-color: white;
+    text-align: justify;
+}
+
+#s-media {
+    position: absolute;
+    top: 320px;
+    left: 43px;
+}
+
+#s-media img {
+    padding: 5px 14px;
+    height: 27px;
+    cursor: pointer;
+}
+
+#s-media .icon {
+    margin: 29px 26px;
+}
+
+#vl {
+    height: 126px;
+    width: 2px;
+    background-color: white;
+    position: absolute;
+    top: 416px;
+    left: 184px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 840px;
+    padding: 69px 40px;
+    margin: 190px 140px;
+    justify-content: center;
+    color: white;
+}
+
+#home::before {
+    content: "";
+    background: url('../img/Bg.png') no-repeat center center/cover;
+    overflow: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 56rem;
+    width: 100%;
+    z-index: -1;
+}
+
+#home .btn {
+    padding: 1px;
+    margin: 5px;
+    height: 47px;
+    width: 173px;
+    background-color: #62d162;
+    border-radius: 40px;
+    ;
+
+}
+
+#home .btn p {
+    padding: 6px 5px;
+    margin: 4px;
+    font-size: 15px;
+}
+
+#services {
+    display: flex;
+}
+
+#services .vr {
+    height: 35px;
+    width: 2px;
+    background: white;
+    position: absolute;
+    top: 47rem;
+    left: 200px;
+}
+
+#services .box {
+    border: 2px solid white;
+    height: 6rem;
+    width: 15rem;
+    margin: 38px 5px;
+    border-radius: 10px;
+}
+
+.serv-box {
+    margin-top: -20%;
+}
+
+.slide {
+    display: flex;
+    gap: 12px;
+    width: 80%;
+    text-align: center;
+    border-radius: 12px;
+    padding: 30px;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    scroll-padding: 30px;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.slide .slider {
+    display: flex;
+    flex: 0 0 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    border-radius: 12px;
+    background: #fff;
+    scroll-snap-align: start;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+
+.slider .text b {
+    font-weight: 800;
+}
+
+.slider h2 {
+    margin-top: 25px;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.slider p {
+    margin-top: 4px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+    text-align: center;
+}
+
+
+.slider:hover {
+    zoom: 110%;
+}
+
+#box-2 {
+    display: flex;
+    margin-top: 10%;
+}
+
+#sub-box-1 {
+    padding-top: 20px;
+    text-align: left;
+    justify-content: center;
+    background-color: rgb(114, 173, 114);
+}
+
+.sb-1 {
+    display: block;
+    margin: auto;
+    padding: 80px 28px;
+}
+
+#sub-box-1 .sb-1 {
+    color: white;
+    padding-left: 244px;
+
+}
+
+.sb-1 ul li {
+    list-style: url("../img/CorrectIcon.png");
+    padding-left: 10px;
+}
+
+#sub-box-2 img {
+    height: 35rem;
+    width: 38rem;
+    margin-top: -10%;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(10, auto);
+    grid-gap: 2px;
+    overflow: auto;
+    white-space: nowrap;
+    cursor: pointer;
+
+}
+
+.box-a {
+    margin: 1px;
+    padding: 6px;
+    background-color: white;
+}
+
+.box-a img {
+    height: 350px;
+    width: 250px;
+}
+
+#work {
+    margin-top: 10%;
+}
+
+#contact {
+    display: flex;
+}
+
+#contact::before {
+    content: " ";
+    position: absolute;
+    left: 0px;
+    height: 55%;
+    width: 100%;
+    z-index: -1;
+    background: url('../img/Footer.png');
+    opacity: 0.7;
+}
+
+#blw {
+    margin-top: 3%;
+}
+
+#blw .log-1 {
+    padding-left: 20%;
+}
+
+#blw p {
+    margin: 17px 149px;
+    color: white;
+}
+
+#blw .log-1 img {
+    height: 5rem;
+    width: 15rem;
+
+}
+
+#blw .social-M {
+    margin: 17px 137px;
+}
+
+#blw .social-M img {
+    padding: 5px 14px;
+    height: 27px;
+    cursor: pointer;
+}
+
+#links {
+    margin-top: 5%;
+    margin-left: -32px;
+}
+
+#links ul li {
+    list-style: none;
+    margin: 11px 1px;
+}
+
+#links ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+#links ul li a:hover {
+    color: wheat;
+}
+
+#touch {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#touch ul li {
+    list-style: none;
+    margin: 11px 1px;
+    color: white;
+}
+
+.a-txt {
+    margin: 4px 24px;
+    padding: 5px 0px;
+}
+
+.b-txt {
+    margin: 2px 0px;
+    padding: 1px 12px;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+}
+
+.a-heading {
+    color: rgb(83, 192, 83);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.b-heading {
+    padding: 20px;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+.c-heading {
+    padding: 22px;
+    color: black;
+    font-size: 20px;
+}
+
+.d-heading {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.cntr {
+    text-align: center;
+    justify-content: center;
+}
+
+.white {
+    color: white;
+    font-size: 1rem;
+}
+
+hr {
+    background-color: white;
+}
